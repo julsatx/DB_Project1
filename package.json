@@ -1,0 +1,22 @@
+{
+  "name": "db_project1",
+  "version": "1.0.0",
+  "description": "db using an api to import data about Chelsea FC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julsatx/DB_Project1.git"
+  },
+  "author": "Julius J Camarillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julsatx/DB_Project1/issues"
+  },
+  "homepage": "https://github.com/julsatx/DB_Project1#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
