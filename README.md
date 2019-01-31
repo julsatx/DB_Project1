@@ -9,5 +9,7 @@ One player will have many Attributes( One to Many) Height, Weight, Age, etc.
 
 A sample qeuery to return all players that are Brazilian:
 SELECT * 
+
 FROM PLAYERS.NATIONALITIES
-WHERE NATIONALALITIES = BRAZIL
+
+WHERE NATIONALALITIES = BRAZIL;
