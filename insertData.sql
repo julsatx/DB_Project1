@@ -1,0 +1,62 @@
+INSERT INTO PLAYERS(player_id,player_name,player_primary_pos,player_secondary_pos,player_age,player_nationality)
+VALUES
+	(1,'Kepa','GK',NULL,24,'Brazil'),
+	(2,'Willy Caballero','GK',NULL,37,'Spain'),
+	(3,'Jamal Blackman','GK',NULL,25,'England'),
+	(4,'Robert Green','GK',NULL,39,'England'),
+	(5,'Antonio Rudiger','CB',NULL,25,'Germany'),
+	(6,'Andreas Christensen','CB',NULL,22,'Denmark'),
+	(7,'David Luiz','CB','DM',31,'Brazil'),
+	(8,'Gary Cahill','CB',NULL,33,'England'),
+	(9,'Ethan Ampadu','CB',NULL,18,'Wales'),
+	(10,'Marcos Alonso','LB','RB',28,'Spain'),
+	(11,'Emerson','LB',NULL,24,'Brazil'),
+	(12,'Cesar Azpilicueta','RB','CB',29,'Spain'),
+	(13,'Davide Zappacosta','RB',NULL,26,'Italy'),
+	(14,'Jorginho','DM','CM',27,'Brazil'),
+	(15,'Ngolo Kante','CM','DM',27,'France'),
+	(16,'Mateo Kovacic','CM',NULL,24,'Croatia'),
+	(17,'Ruben Loftus-Cheek','CM',NULL,23,'England'),
+	(18,'Danny Drinkwater','CM',NULL,28,'England'),
+	(19,'Marco Van Ginkel','CM',NULL,26,'Netherlands'),
+	(20,'Ross Barkley','CM','CAM',25,'England'),
+	(21,'Eden Hazard','LW','CF',28,'Belgium'),
+	(22,'Callum Hudson','LW',NULL,18,'England'),
+	(23,'Willian','RW','LW',30,'Brazil'),
+	(24,'Pedro','RW','LW',31,'Spain'),
+	(25,'Gonzalo Higuain','CF',NULL,31,'Argentina'),
+	(26,'Olivier Giroud','CF',NULL,32,'France');
+
+INSERT INTO STAFF(staff_id,staff_position,staff_name)
+VALUES
+	(1,'Head Coach','Maurizio Sarri'),
+	(2,'Gianfranco Zola','1st Assistant Coach'),
+	(3,'Luca Gotti','1st Assistant Coach'),
+	(4,'Marco Ianni','2nd Assistant Coach'),
+	(5,'Massimo Nenci','Goalkeeper Coach'),
+	(6,'Henrique Hilario','Goalkeeper Coach'),
+	(7,'Carlo Cudicini','Club Ambassador'),
+	(8,'Paolo Bertelli','Fitness Coach'),
+	(9,'Davide Ranzato','Assistant Fitness Coach'),
+	(10,'Davide Losi','Assistant Fitness Coach'),
+	(11,'Gianni Picchioni','Scout'),
+	(12,'Paco Biosca','Medical Director'),
+	(13,'Scott McLachlan','International Scout');
+
+INSERT INTO MATCHDAY_SQUAD(starter_id,p_id,st_id)
+VALUES
+	(1,1,NULL),
+	(2,5,NULL),
+	(3,7,NULL),
+	(4,10,NULL),
+	(5,12,NULL),
+	(6,14,NULL),
+	(7,15,NULL),
+	(8,20,NULL),
+	(9,21,NULL),
+	(10,25,NULL),
+	(11,23,NULL),
+	(12,NULL,1),
+	(13,NULL,2),
+	(14,NULL,5),
+	(15,NULL,12);

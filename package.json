@@ -2,7 +2,7 @@
   "name": "db_project1",
   "version": "1.0.0",
   "description": "db using an api to import data about Chelsea FC",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
