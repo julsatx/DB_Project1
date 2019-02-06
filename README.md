@@ -11,6 +11,6 @@ A sample qeuery to return all players that are Brazilian:
 
 SELECT * 
 
-FROM PLAYERS.NATIONALITIES
+FROM PLAYERS
 
-WHERE NATIONALALITIES = BRAZIL;
+WHERE NATIONALITIES = 'BRAZIL';
