@@ -43,7 +43,7 @@ router.post('/',(request,response)=>{
 	})
 })	
 
-router.put('/:id',(request,rsponse)=>{
+router.put('/:id',(request,response)=>{
 
 	let query = 'UPDATE STAFF SET staff_position=($1),staff_name=($2) WHERE staff_id=($3)'
 	const id = request.params.id
@@ -56,5 +56,16 @@ router.put('/:id',(request,rsponse)=>{
 	})
 })
 
+router.delete('/:id',(request,response)=>{
+	const id = request.params.id
+	let query = 'DELETE FROM STAFF WHERE staff_id =($1)'
+	client.query(query,[id])
+	.then(result=> response.send(result))
+	.catch(error=> {
+		console.log(error)
+		response.send("AHHH Error")
+	})
+
+})
 
 module.exports = router
