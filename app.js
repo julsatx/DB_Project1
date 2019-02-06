@@ -1,5 +1,7 @@
 const express = require('express')
 
+const bodyParser = require('body-parser')
+
 const { Client } = require('pg')
 
 const PORT = 7000
@@ -14,11 +16,11 @@ const connectionString =
 //instatiate 
 const client = new Client({ connectionString })
 client.connect()
-	.then(()=> { console.log('Connection Active') })
+	.then(()=> { console.log('Connection to PG Client Active') })
 	.catch(error=>{console.log('error, something went wrong')})
 
 //link up path playerRouter
 app.use('/Players',playersRouter)
 app.listen(PORT, ()=>{
-	console.log("Connected")
+	console.log("Connected on port ", PORT)
 })

@@ -15,11 +15,11 @@
 -- 	PRIMARY KEY(staff_id)
 -- );
 
-CREATE TABLE MATCHDAY_SQUAD(
-	starter_id int NOT NULL,
-	p_id int,
-	st_id int,
-	PRIMARY KEY(starter_id),
-	FOREIGN KEY (p_id) REFERENCES PLAYERS(player_id),
-	FOREIGN KEY (st_id) REFERENCES STAFF(staff_id)
-);
+-- CREATE TABLE MATCHDAY_SQUAD(
+-- 	starter_id int NOT NULL,
+-- 	p_id int,
+-- 	st_id int,
+-- 	PRIMARY KEY(starter_id),
+-- 	FOREIGN KEY (p_id) REFERENCES PLAYERS(player_id),
+-- 	FOREIGN KEY (st_id) REFERENCES STAFF(staff_id)
+-- );
