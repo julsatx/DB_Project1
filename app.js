@@ -1,14 +1,12 @@
 const express = require('express')
-
 const bodyParser = require('body-parser')
-
 const { Client } = require('pg')
-
+const morgan = require('morgan')
 const PORT = 7000
+const app = express()
+
 
 playersRouter = require('./server/Players/controller.js')
-
-let app = express()
 
 const connectionString = 
 'postgresql://julsatx:Porkchop@localhost:/FootballClub'
@@ -20,6 +18,7 @@ client.connect()
 	.catch(error=>{console.log('error, something went wrong')})
 
 //link up path playerRouter
+app.use(morgan('dev'))
 app.use('/Players',playersRouter)
 app.listen(PORT, ()=>{
 	console.log("Connected on port ", PORT)
